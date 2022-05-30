@@ -1,0 +1,119 @@
+/* content div.*/
+.content-div {
+    margin: 15px;
+  }
+  .hotel-details img {
+    height: 200px;
+    max-width: 250px;
+  }
+  .hotel-details-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    line-height: 50px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+  
+  .hotel-details-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: first baseline;
+    margin-bottom: 5%;
+  }
+  .hotel-details-4 {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: first baseline;
+    margin-bottom: 5%;
+  }
+  
+  .hide-image {
+    display: none;
+  }
+  .display-image2 {
+    display: block;
+  }
+  
+  .hotel-details {
+    min-width: 40%;
+    background-color: lightgray;
+    margin: 3% 5% 2% 3%;
+    /* padding-bottom: 10px; */
+    line-height: 30px;
+    display: flex;
+  }
+  .hotel-details a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .hotel-details:hover {
+    background-color: rosybrown;
+  }
+  .lv-mv {
+    display: flex;
+    justify-content: center;
+  }
+  .lv-mv li {
+    list-style-type: none;
+  }
+  .lv-mv li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    /* list-style-type: none; */
+    margin-right: 80px;
+    margin-top: 50px;
+  }
+  .hide-image {
+    display: none;
+  }
+  
+  .list-view-btn {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(129, 18, 133, 0.678),
+      rgba(8, 90, 138, 0.651)
+    );
+    cursor: pointer;
+    padding: 0.7rem 1.5rem;
+    border-radius: 1.2rem;
+    border: none;
+    color: white;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.507);
+    margin-right: 2rem;
+    transition: all 0.4s;
+  }
+  .list-view-btn:hover {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(8, 90, 138, 0.651),
+      rgba(129, 18, 133, 0.678)
+    );
+    transform: scale(1.2);
+  }
+  
+  .map-view-btn {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(129, 18, 133, 0.678),
+      rgba(8, 90, 138, 0.651)
+    );
+    cursor: pointer;
+    padding: 0.7rem 1.5rem;
+    border-radius: 1.2rem;
+    border: none;
+    color: white;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.507);
+    margin-left: 2rem;
+    transition: all 0.4s;
+  }
+  .map-view-btn:hover {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(8, 90, 138, 0.651),
+      rgba(129, 18, 133, 0.678)
+    );
+    transform: scale(1.2);
+  }

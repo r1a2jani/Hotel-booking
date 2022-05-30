@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: #e0e0e0;
+    height: 100%;
+    width: 100%;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  .my-header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: rosybrown;
+    z-index: 100;
+  }
+  .my-container {
+    height: 100%;
+    width: 100%;
+    font-family: "Ubuntu", sans-serif;
+    position: relative;
+  }
+  .logo-img {
+    width: 6rem;
+    height: 6rem;
+    margin-left: 1rem;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.336);
+  }
+  .login-icon {
+    text-decoration: none;
+    margin-right: 1.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.2s;
+  }
+  .login-icon:hover {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(129, 18, 133, 0.562),
+      rgba(8, 90, 138, 0.555)
+    );
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  
+  /* footer div */
+  
+  .footer-div {
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: rosybrown;
+    width: 100%;
+  }
+  .footer-div-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .copy-right {
+    font-size: 10px;
+    margin: 15px 0 0 0;
+    /* align-self: flex-end; */
+  }
+  .social-logo {
+    float: right;
+    margin: 12px 20px 12px 0px;
+  }
+  .social-logo img {
+    height: 20px;
+    width: 22px;
+  }
+  .contact-us {
+    margin: 12px 0 12px 20px;
+  }
+  .contact-us a {
+    text-decoration: none;
+    color: black;
+  }
+  .btn-contact {
+    padding: 1rem 1.5rem;
+    border-radius: 1.2rem;
+    background-color: slateblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .btn-contact:hover {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(129, 18, 133, 0.562),
+      rgba(8, 90, 138, 0.555)
+    );
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  
+  /* ---------------------------------- Login --------------------------------- */
+  .conatainer-login {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to left bottom, #1f0b1c9a, #0b1f0ecc);
+    position: fixed;
+    z-index: 500;
+  }
+  
+  .login {
+    display: inline-block;
+    padding: 10rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%);
+    background-image: linear-gradient(
+        104deg,
+        rgba(255, 255, 255, 0.541) 0%,
+        rgba(255, 255, 255, 0.685) 50%,
+        transparent 50%
+      ),
+      url(https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870);
+    border-radius: 0.4rem;
+    text-align: center;
+    background-size: cover;
+  }
+  
+  .userD {
+    display: flex;
+    justify-content: space-between;
+  }
+  .pass {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-right: 1rem;
+  }
+  .login-req {
+    background-image: linear-gradient(
+      to right bottom,
+      rgb(19, 145, 57),
+      rgba(0, 0, 0, 0.986)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block;
+    color: transparent;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 800;
+  }
+  .userName {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-right: 1rem;
+  }
+  .form-inp {
+    padding: 0.5rem 2rem;
+    border: none;
+  }
+  .form-inp:focus {
+    outline: none;
+  }
+  .submit {
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 12px;
+    border: none;
+    transition: all 0.3s;
+  }
+  .submit:hover {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(129, 18, 133, 0.562),
+      rgba(8, 90, 138, 0.555)
+    );
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  .close-login {
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+  .close-login:hover {
+    transform: scale(1.5);
+  }
+  
+  .hidden {
+    opacity: 0;
+    display: none;
+  }
+  
+  #login-btn {
+    border: 1px solid transparent;
+    background-color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+    border-radius: 0.4rem;
+    margin-right: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  #login-btn:hover {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(129, 18, 133, 0.562),
+      rgba(8, 90, 138, 0.555)
+    );
+    color: whitesmoke;
+  }
+  
+  /* ------------------------------- Contact US ------------------------------- */
+  #cont-contact {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to left bottom, #1f0b1c9a, #0b1f0ecc);
+    position: fixed;
+    z-index: 500;
+    /* display: none; */
+  }
+  .contact-uss {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%);
+    background-image: linear-gradient(
+        104deg,
+        rgba(255, 255, 255, 0.541) 0%,
+        rgba(255, 255, 255, 0.541) 50%,
+        transparent 50%
+      ),
+      url(https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870);
+    border-radius: 0.4rem;
+    background-size: cover;
+    width: 50vw;
+    height: 50vh;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.521);
+    padding: 2rem;
+    transition: all 0.3s;
+  }
+  .close-contact {
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+  .close-contact:hover {
+    transform: scale(1.5);
+  }
+  .cont-heading {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+  .cont-des {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .cont-inp {
+    padding: 0.5rem 2rem;
+    border: none;
+  }
+  .cont-sub {
+    margin: 1rem auto auto 5rem;
+    padding: 0.7rem 2rem;
+    border: none;
+    border-radius: 1.2rem;
+  }
+  .cont-sub:hover {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(129, 18, 133, 0.562),
+      rgba(8, 90, 138, 0.555)
+    );
+    color: whitesmoke;
+  }

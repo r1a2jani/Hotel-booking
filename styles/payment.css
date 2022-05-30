@@ -1,0 +1,68 @@
+h2 {
+    margin-bottom: 20px;
+  }
+  p strong {
+    font-family: "Tapestry", cursive;
+  }
+  .content-div {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .blu-hotel-desc {
+    /* padding: 25px 0; */
+  
+    line-height: 30px;
+    margin: auto 30px;
+  }
+  
+  .radisson-blu-hotel img {
+    width: 350px;
+    max-height: 300px;
+  }
+  .radisson-blu-hotel {
+    background-color: rgb(132, 136, 139);
+    width: 51%;
+    height: 30%;
+    /* margin: 2% auto; */
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-top: 100px;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.4);
+  }
+  .payment_details {
+    display: flex;
+    background-color: rosybrown;
+    width: 95%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 0px;
+    line-height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 2% 200px 2%;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.4);
+  }
+  
+  .pay-now a {
+    text-decoration: none;
+    color: black;
+  }
+  .btn-success {
+    background-color: green;
+    padding: 0.8rem 1.5rem;
+    border-radius: 1.2rem;
+    color: white;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.349);
+    transition: all 0.3s;
+  }
+  .btn-success:hover {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(8, 90, 138, 0.651),
+      rgba(129, 18, 133, 0.678)
+    );
+    transform: scale(1.2);
+  }
