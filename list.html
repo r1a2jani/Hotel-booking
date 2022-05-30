@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List</title>
+    <link rel="stylesheet" href="styles/list.css" />
+    <link rel="stylesheet" href="styles/common.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      .map{
+        height: 100vh;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="conatainer-login hidden"> </div>
+     <div id="cont-contact" class="hidden">
+      
+    </div>
+    <div class="my-container">
+      <!-- HEADER DIV START -->
+      <div class="my-container" >
+      <!-- HEADER DIV START -->
+      <header class="my-header-div" id="header">
+        
+      </header>
+      <!-- HEADER DIV END -->
+
+      <!-- CONTENT DIV START  -->
+      <div class="content-div">
+        <div class="lv-mv">
+          <li>          
+              <button id="btn11"  type="button" class="btn btn-primary list-view-btn " onclick="handleView(event)">List View</button>
+          </li>
+          <li>
+            <button id="btn22" type="button" class="btn map-view-btn" onclick="handleView(event)">Map View</button>
+          </li>
+        </div>
+
+        <div class="hotel-details-3 hideThis">
+          <div id="list-view" class="hotel-details">
+            <div class="hotel-details-image">
+              <a href="detail.html">
+                <img
+                  src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                />
+              </a>
+            </div>
+            <div class="hotel-details-text">
+              <h3>Radisson Blu Hotel</h3>       
+              <p>
+                <span style="color: orange;" class="starr fa fa-star "></span>
+                <span style="color: orange;" class="starr fa fa-star "></span>
+                <span style="color: orange;" class="starr fa fa-star "></span>
+                <span style="color: orange;" class="starr fa fa-star "></span> 
+                <span style="color: orange;" class="starr fa fa-star "></span>
+              </p>
+              <p>New Delhi</p>
+            </div>
+          </div>
+          <div class="hotel-details">
+            <div class="hotel-details-image">
+              <img
+              src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"
+            />
+            </div>
+            <div class="hotel-details-text">
+              <h3>The Lalit New Delhi</h3>
+            <p>
+              <span style="color: orange;" class="starr fa fa-star "></span>
+              <span style="color: orange;" class="starr fa fa-star "></span>
+              <span style="color: orange;" class="starr fa fa-star "></span>
+              <span style="color: orange;" class="fa fa-star-half-o checked"></span>
+              <span " class="starr fa fa-star "></span>
+
+            </p>
+            <p>New Delhi</p>
+            </div>
+            
+          </div>
+          <div class="hotel-details">
+            <div class="hotel-details-image">
+              <img
+              src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"
+            />
+            </div>
+            <div class="hotel-details-text">
+              <h3>Taj Palace</h3>
+              <p>
+                <span style="color: orange;" class="starr fa fa-star "></span>
+                <span style="color: orange;" class="starr fa fa-star "></span>
+                <span style="color: orange;" class="starr fa fa-star "></span>
+                <span style="color: orange;" class="starr fa fa-star "></span>
+                <span class="starr fa fa-star "></span>
+
+              </p>
+              <p>New Delhi</p>
+            </div>
+            </div>
+            
+        </div>
+        <div class="imgg hide-imag">
+             <div class="map " id="map-view">
+               <!-- <img  class="imgg hide-image"
+            src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"
+          /> -->
+          <iframe style="width: 100%; height:90vh; margin:2rem 0 0 0" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14020.439463592036!2d77.38985960000001!3d28.53641725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1653585268772!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <!-- <h3>MAP VIEW</h3> -->
+             </div>
+        </div>
+       
+          
+        
+      </div>
+
+      
+      <!-- FOOTER DIV START -->
+      <footer class="footer-div">
+        <div id="footer" class="footer-div-list">
+    
+        </div>
+      </footer>
+      <!-- FOOTER DIV END -->
+    </div>
+    
+
+      <script src="scripts/list.js"></script>
+      <script src="scripts/common.js"></script>
+    
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0_pfNESt2xMqUW3mGvMKnBy_Yim_H5Vs&callback=initMap
+"></script>
+
+  </body>
+</html>
+<!-- AIzaSyC0_pfNESt2xMqUW3mGvMKnBy_Yim_H5Vs -->
